@@ -1,13 +1,11 @@
 package AT_lessons;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Car.beep();
+        Car.fuel_consumption_distance ();
+
     }
 }
