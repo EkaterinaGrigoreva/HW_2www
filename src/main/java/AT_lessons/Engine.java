@@ -1,8 +1,12 @@
 package AT_lessons;
 
 public class Engine {
+    private static int fuelConsumption;
     boolean hybrid;
     int vol;
     int horsepower;
-    static int fuelConsumption;
+
+    public static int getFuelConsumption(){
+        return fuelConsumption;
+    }
 }

@@ -8,16 +8,17 @@ static float distance;
 int mass;
 boolean dtp;
 int vol;
-String engine;
+Engine engine;
+int fuelConsumption = Engine.getFuelConsumption ();
 
-public static void beep () {
+public void beep () {
     System.out.println("БИИИИИП");
 }
 
-public static void fuel_consumption_distance () {
+public void fuel_consumption_distance () {
 
    float fuelConsumptionDistance;
-    fuelConsumptionDistance = Engine.fuelConsumption*distance;
+    fuelConsumptionDistance = Engine.getFuelConsumption ()*distance;
     System.out.println(fuelConsumptionDistance);
 }
 }
