@@ -9,7 +9,11 @@ int mass;
 boolean dtp;
 int vol;
 Engine engine;
-int fuelConsumption = Engine.getFuelConsumption ();
+
+
+    Engine dvigatel = new Engine();
+
+
 
 public void beep () {
     System.out.println("БИИИИИП");
@@ -18,7 +22,7 @@ public void beep () {
 public void fuel_consumption_distance () {
 
    float fuelConsumptionDistance;
-    fuelConsumptionDistance = Engine.getFuelConsumption ()*distance;
+    fuelConsumptionDistance = dvigatel.getFuelConsumption()*distance;
     System.out.println(fuelConsumptionDistance);
 }
 }

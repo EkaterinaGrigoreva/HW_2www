@@ -4,8 +4,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        Car.beep();
-        Car.fuel_consumption_distance ();
+        Car Devyatos = new Car();
+        Devyatos.beep();
+        Devyatos.fuel_consumption_distance ();
 
     }
 }
